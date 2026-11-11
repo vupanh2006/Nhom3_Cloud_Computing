@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Task Manager - Nhóm 3</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <div class="eyebrow">NHÓM 3 · ĐIỆN TOÁN ĐÁM MÂY</div>
+      <h1>Quản lý công việc</h1>
+      <p class="sub">Theo dõi những việc cần làm trong dự án</p>
+    </header>
+    <section class="panel">
+      <form id="task-form">
+        <input id="task-title" maxlength="120" placeholder="Nhập công việc mới..." required>
+        <button type="submit">+ Thêm việc</button>
+      </form>
+      <div class="meta"><span id="count">Đang tải...</span><button id="reload" class="ghost" type="button">Tải lại</button></div>
+      <ul id="tasks" class="tasks"></ul>
+      <p id="message" role="status"></p>
+    </section>
+    <footer>Frontend: HTML/CSS/JS · Backend: Python Flask · Demo tiến độ</footer>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>

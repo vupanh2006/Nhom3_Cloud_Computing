@@ -1,0 +1,13 @@
+services:
+  backend:
+    build: ./backend
+    container_name: task-backend
+    expose:
+      - "5000"
+  frontend:
+    build: ./frontend
+    container_name: task-frontend
+    ports:
+      - "8080:80"
+    depends_on:
+      - backend
